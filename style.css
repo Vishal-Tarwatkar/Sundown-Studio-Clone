@@ -116,8 +116,74 @@ nav{
    height: 100%;
    object-fit: cover;
    border-radius: 25px;
+   display: none;
 }
 
 .shape-container{
-   
+   position: absolute;
+   width: 45vw;
+   height: 35vw;
+}
+
+.blurr-obj1{
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(rgb(254, 51, 10), rgb(254, 106, 27));
+   /* background-color:  rgb(254, 106, 27); */
+   filter: blur(20px);
+   border-radius: 50%;
+   position: absolute;
+   right: -70vw;
+   top: -10vw;
+}
+
+.blurr-obj2{
+   width: 45vw;
+   height: 35vw;
+   background-color: rgb(254, 51, 10);
+   filter: blur(30px);
+   border-radius: 45%;
+   position: absolute;
+   right: -59vw;
+   top: -7vw;
+   animation-name: anime1;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes anime1{
+   from{
+      transform: translate(3%, 0%);
+   }
+   to{
+      transform: translate(-3%, -10%);
+   }
+}
+
+.blurr-obj3{
+   width: 40VW;
+   height: 35VW;
+   background-color: rgb(254, 51, 10);
+   filter: blur(20px);
+   border-radius: 45%;
+   position: absolute;
+   right: -43vw;
+   top: -5vw;
+   animation-name: anime2;
+   animation-duration: 2s;
+   animation-delay: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes anime2{
+   from{
+      transform: translate(-2%,3%);
+   }
+   to{
+      transform: translate(0,-5%);
+   }
 }
