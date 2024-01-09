@@ -16,8 +16,9 @@ html, body{
    font-family: neu, sans-serif;
 }
 
+/*========================= page1 starting =========================*/
 .page1{
-   height: 100vh;
+   min-height: 100vh;
    width: 100%;
    position: relative;
    background-color: rgb(239, 234, 227);
@@ -116,7 +117,7 @@ nav{
    height: 100%;
    object-fit: cover;
    border-radius: 25px;
-   display: none;
+   position: relative;
 }
 
 .shape-container{
@@ -129,7 +130,6 @@ nav{
    width: 100%;
    height: 100%;
    background: linear-gradient(rgb(254, 51, 10), rgb(254, 106, 27));
-   /* background-color:  rgb(254, 106, 27); */
    filter: blur(20px);
    border-radius: 50%;
    position: absolute;
@@ -186,4 +186,11 @@ nav{
    to{
       transform: translate(0,-5%);
    }
+}
+
+/*========================= page2 starting =========================*/
+.page2{
+   min-height: 100vh;
+   width: 100%;
+   background-color: rgb(239, 234, 227);
 }
